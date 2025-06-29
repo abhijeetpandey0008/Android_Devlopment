@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Host (Teacher) Button -->
+    <Button
+        android:id="@+id/btnHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start as Host (Teacher)" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Stop Hosting Button -->
+    <Button
+        android:id="@+id/btnStopHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Hosting" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Client (Student) Button -->
+    <Button
+        android:id="@+id/btnClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send as Client (Student)" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Received Attendance"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Attendance ListView -->
+    <ListView
+        android:id="@+id/attendance_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
